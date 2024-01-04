@@ -1,0 +1,143 @@
+/* Utilities */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #777;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+#navbar-logo {
+  width: 7rem;
+}
+
+/* Hero */
+.hero-img {
+  width: 100%;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  display: block;
+}
+
+.hero-card {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+.hero-card h2 {
+  font-weight: 600;
+}
+
+.hero-card p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-playback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero-playback i {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Buttons */
+.hero-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: #0067b8;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.btn-light {
+  background-color: white;
+  border: none;
+  font-size: 0.9rem;
+  /* padding: 0.7rem; */
+  color: #0067b8;
+  font-weight: 700;
+}
+
+/* Shop Cards */
+.shop-card {
+  align-items: center;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.shop-card img {
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.shop-card a {
+  color: #0067b8;
+  font-weight: 600;
+}
+
+/* Product Cards */
+.product-card {
+  margin: 1rem;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-card h4 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 0.96rem;
+}
+
+.product-card .btn-light {
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.product-card .btn-primary {
+  width: 120px;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
