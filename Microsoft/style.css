@@ -14,6 +14,11 @@ li {
   list-style: none;
 }
 
+.container {
+  width: 100%;
+  margin: auto;
+}
+
 /* Navigation */
 .nav-bar {
   display: flex;
@@ -29,7 +34,13 @@ li {
 }
 
 /* Hero */
+.hero {
+  display: flex;
+  flex-flow: column;
+}
+
 .hero-img {
+  order: 1;
   width: 100%;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
@@ -37,6 +48,7 @@ li {
 }
 
 .hero-card {
+  order: 2;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -138,8 +150,8 @@ li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -300,6 +312,68 @@ footer ul li {
 
 /* Point where hero changes to side-by-side */
 @media screen and (min-width: 1080px) {
+  .container {
+    width: 86%;
+    margin: auto;
+  }
+
+  .hero {
+    flex-flow: row;
+    background-color: #c2e1fe;
+    padding-left: 4rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    height: 65.5vh;
+  }
+
+  .hero-img {
+    order: 2;
+    width: 58vw;
+    object-fit: cover;
+  }
+
+  .hero-card {
+    background-color: #c2e1fe;
+    order: 1;
+    /* padding-top: 7rem; */
+    /* margin-left: 10rem; */
+    /* padding-right: 2rem; */
+    /* padding-bottom: 1rem; */
+    /* margin-left: 0.3rem; */
+    /* margin-right: 0.3rem; */
+    margin: auto;
+    margin-left: 6rem;
+    box-shadow: 0px 0px 0px #ccc;
+  }
+
+  .hero-card h2 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-card p {
+    margin-bottom: 2rem;
+  }
+
+  .hero-card .btn-light {
+    background-color: #c2e1fe;
+    color: black;
+  }
+
+  .hero-btn-container {
+    justify-content: left;
+  }
+
+  .hero-btn-container :last-child {
+    margin-left: 2rem;
+  }
+
+  .shop-cards {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   footer {
     grid-template-columns: repeat(6, 1fr);
   }
