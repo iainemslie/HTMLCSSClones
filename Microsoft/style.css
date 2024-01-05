@@ -328,7 +328,7 @@ footer ul li {
 
   .hero-img {
     order: 2;
-    width: 58vw;
+    width: 75vw;
     object-fit: cover;
   }
 
@@ -376,6 +376,8 @@ footer ul li {
 
   footer {
     grid-template-columns: repeat(6, 1fr);
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .product-cards {
