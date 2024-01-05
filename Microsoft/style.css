@@ -10,6 +10,10 @@ a {
   color: #777;
 }
 
+li {
+  list-style: none;
+}
+
 /* Navigation */
 .nav-bar {
   display: flex;
@@ -68,6 +72,19 @@ a {
   justify-content: space-between;
 }
 
+.btn {
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .btn-primary {
   background-color: #0067b8;
   border: none;
@@ -84,9 +101,13 @@ a {
   background-color: white;
   border: none;
   font-size: 0.9rem;
-  /* padding: 0.7rem; */
   color: #0067b8;
   font-weight: 700;
+}
+
+.btn-grey {
+  width: 9rem;
+  background-color: #ccc;
 }
 
 /* Shop Cards */
@@ -111,8 +132,13 @@ a {
 }
 
 /* Product Cards */
+.product-cards {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .product-card {
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 .product-card img {
@@ -133,6 +159,8 @@ a {
 .product-card .btn-light {
   margin-top: 1.4rem;
   margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .product-card .btn-primary {
@@ -140,4 +168,79 @@ a {
   margin-top: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+/* For Business Section */
+#for-business {
+  padding-top: 5rem;
+}
+
+#for-business h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Social Links */
+.social-links {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.social-links h4 {
+  font-weight: 400;
+}
+
+.social-links i {
+  margin-left: 2rem;
+}
+
+/* Pre Footer */
+.pre-footer {
+  margin: 1rem;
+  padding-bottom: 4rem;
+}
+.pre-footer a {
+  font-size: 0.8rem;
+  color: #0067b8;
+}
+
+.pre-footer .btn {
+  float: right;
+  clear: none;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+footer ul li h5 {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer ul li {
+  color: #333;
+  font-weight: 300;
+  font-size: 0.75rem;
+  margin: 0.75rem;
+}
+
+.footer-section {
+  margin-bottom: 3rem;
+}
+
+.footer-end ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-end ul li {
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin: 0.5rem;
 }
