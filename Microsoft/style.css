@@ -58,6 +58,7 @@ li {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  margin-top: 0.5rem;
 }
 
 .hero-playback i {
@@ -100,9 +101,10 @@ li {
 .btn-light {
   background-color: white;
   border: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #0067b8;
-  font-weight: 700;
+  font-weight: 600;
+  padding-left: 0;
 }
 
 .btn-grey {
@@ -110,15 +112,41 @@ li {
   background-color: #ccc;
 }
 
+/* Badges */
+.badge-yellow {
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: orange;
+  width: 4rem;
+}
+
 /* Shop Cards */
+.shop-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
 .shop-card {
   align-items: center;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .shop-card img {
@@ -137,16 +165,12 @@ li {
   margin-right: 1rem;
 }
 
-.product-card {
-  /* margin: 1rem; */
-}
-
 .product-card img {
   width: 100%;
 }
 
 .product-card h4 {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
   font-size: 1.3rem;
   font-weight: 600;
@@ -243,4 +267,8 @@ footer ul li {
   font-size: 0.7rem;
   font-weight: 300;
   margin: 0.5rem;
+}
+
+/* Point where hero changes to side-by-side */
+@media screen and (min-width: 1084px) {
 }
