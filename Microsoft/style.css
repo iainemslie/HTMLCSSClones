@@ -215,6 +215,23 @@ li {
   padding-bottom: 0.5rem;
 }
 
+#last-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.xbox-img {
+  order: 1;
+}
+
+.xbox-card {
+  order: 2;
+}
+
+.xbox-card h4 {
+  font-size: 1.3rem;
+}
+
 /* For Business Section */
 #for-business-heading {
   padding-top: 5rem;
@@ -335,12 +352,6 @@ footer ul li {
   .hero-card {
     background-color: #c2e1fe;
     order: 1;
-    /* padding-top: 7rem; */
-    /* margin-left: 10rem; */
-    /* padding-right: 2rem; */
-    /* padding-bottom: 1rem; */
-    /* margin-left: 0.3rem; */
-    /* margin-right: 0.3rem; */
     margin: auto;
     margin-left: 6rem;
     box-shadow: 0px 0px 0px #ccc;
@@ -372,6 +383,31 @@ footer ul li {
   .shop-cards {
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  #last-product {
+    display: flex;
+    flex-direction: row;
+    background-color: #111;
+    color: white;
+  }
+
+  .xbox-img {
+    order: 2;
+    width: 75vw;
+    object-fit: cover;
+  }
+
+  .xbox-card {
+    order: 1;
+    margin: auto;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 5rem;
+  }
+
+  .xbox-card h4 {
+    font-size: 2.2rem;
   }
 
   footer {
