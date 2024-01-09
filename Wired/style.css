@@ -73,29 +73,29 @@ a {
   padding-bottom: 0.3rem;
 }
 
-.todays-picks-main img {
+.main-card img {
   width: 100%;
 }
 
-.todays-picks-main h4 {
+.main-card-category {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 500;
   font-size: 0.8rem;
 }
 
-.todays-picks-main h2 {
+.main-card-title {
   font-weight: 900;
   font-size: 1.6rem;
-  padding-bottom: 0.5rem;
 }
 
-.todays-picks-main p {
+.main-card-description {
   font-size: 0.9rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-.todays-picks-main h5 {
+.main-card-author {
   font-weight: 600;
   font-size: 0.7rem;
 }
@@ -141,4 +141,69 @@ a {
 .most-recent-card-author {
   font-size: 0.7rem;
   margin-bottom: 0.7rem;
+}
+
+/* Trending Stories */
+.trending-stories-card {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+.trending-stories-card-left {
+  margin-right: 3rem;
+}
+
+.trending-stories-card-img {
+  width: 5rem;
+}
+
+.trending-stories-card-category {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.trending-stories-card-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.trending-stories-description {
+  font-size: 0.8rem;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.trending-stories-author {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+/* Wired World Section */
+.simple-card {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.simple-card-left {
+  margin-right: 0.5rem;
+}
+
+.simple-card-category {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.simple-card-heading {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.simple-card img {
+  width: 5rem;
 }
