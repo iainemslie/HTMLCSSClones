@@ -22,6 +22,10 @@ a {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
   box-shadow: 0.5px 0.5px 0.5px #ddd;
 }
 
@@ -60,6 +64,10 @@ a {
 }
 
 /* Todays Picks */
+.todays-picks {
+  padding-top: 4rem;
+}
+
 .section-heading {
   background-color: black;
   color: white;
