@@ -13,7 +13,27 @@ function createDesktopNavbar() {
   console.log('desktop');
   // Insert desktop navbar
   const navbar = document.querySelector('.nav-bar');
-  navbar.replaceChildren('Desktop');
+
+  // Navbar Logo
+  link = document.createElement('a');
+  image = document.createElement('img');
+
+  // image.setAttribute('id', 'navbar-logo');
+  // image.setAttribute('src', 'img/main-logo.png');
+  // link.appendChild(image);
+  // navbar.replaceChildren(link);
+  navbar.replaceChildren('desktop');
+
+  // Microsoft 365
+  // Teams
+  // Copilot
+  // Windows
+  // More
+
+  // ALl Microsoft
+  // Magnifying Glass
+  // Cart
+  // User Portrait
 }
 
 function createMobileNavbar() {
