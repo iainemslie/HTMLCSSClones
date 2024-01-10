@@ -57,6 +57,7 @@ a {
   padding-right: 0.7rem;
   padding-bottom: 0.2rem;
   padding-left: 0.7rem;
+  width: fit-content;
 }
 
 #subscribe-btn a {
@@ -214,4 +215,45 @@ a {
 
 .simple-card img {
   width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  margin-left: 0.8rem;
+}
+
+/* Basic Cards Section */
+.basic-cards {
+  margin-top: 5rem;
+}
+
+.basic-card-section-heading {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 4rem;
+  padding: 0.4rem;
+  width: fit-content;
+}
+
+.basic-card-section-img {
+  width: 100%;
+}
+
+.basic-card {
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Newsletter */
+.newsletter {
+  background-image: url('./images/background.webp');
+  z-index: -1;
+}
+
+.newletter-card {
+  background-color: white;
+  z-index: 1;
 }
