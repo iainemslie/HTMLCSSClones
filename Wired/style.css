@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: 'Schibsted Grotesk', sans-serif;
 }
 
@@ -249,11 +252,104 @@ a {
 
 /* Newsletter */
 .newsletter {
+  margin-top: 7rem;
   background-image: url('./images/background.webp');
-  z-index: -1;
+  background-size: cover;
+  display: flex;
 }
 
-.newletter-card {
+.newsletter-card {
+  margin: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   background-color: white;
-  z-index: 1;
+}
+
+.newsletter-card i {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.newsletter-card h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-card h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.newsletter-card h4 span {
+  color: #666;
+  text-decoration: underline;
+}
+
+.newsletter-card input {
+  width: 100%;
+  padding: 1rem;
+  color: #777;
+}
+
+.newsletter .submit-btn {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  font-size: 0.7rem;
+  color: #888;
+  padding-bottom: 4rem;
+}
+
+.newsletter p span {
+  text-decoration: underline;
+}
+
+/* Videos */
+.videos {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.videos h5 {
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+.videos img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+}
+
+footer img {
+  margin: auto;
+  width: 34%;
+  padding-bottom: 2rem;
+}
+
+.footer-title {
+  display: flex;
+  color: #eee;
+  flex-direction: column;
+  padding: 4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.2rem;
+  border-bottom: 1px solid #444;
 }
