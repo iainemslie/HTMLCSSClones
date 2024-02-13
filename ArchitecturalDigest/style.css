@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+/***********/
+/* NAVBAR */
+/***********/
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px 3px 3px #EFEFEF;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+#navbar img {
+    padding-left: 18rem;
+    cursor: pointer;
+    height: 30px;
+}
+
+/* LEFT NAV */
+#hamburger {
+    margin-left: 25px;
+}
+
+#hamburger i {
+    color: black;
+}
+
+/* RIGHT NAV */
+#rightNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#rightNav #subscribeBtn {
+    padding: 5px 25px;
+    margin: 5px 15px 0px 0px;
+    border-radius: 0;
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight:500;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+#rightNav .fa-user {
+    margin: 15px;
+    cursor: pointer;
+}
+
+#rightNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+#rightNav #signIn {
+    padding-top: 5px;
+    margin-right: 30px;
+}
+
+#rightNav #search {
+    margin-top: 5px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#subNavbar {
+    display: block;
+    top: 60px;
+    border-top: 1px solid #DDD;
+    height: 50px;
+    box-shadow: 0px 3px 3px #EFEFEF;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    transition: all 0.25s linear;
+}
+
+#subNavbar.hidden {
+    z-index: 0;
+    transform: translateY(-50px);
+}
+
+#subNavbar #items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+
+#subNavbar a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+#subNavbar a:hover {
+    border-bottom: 1px solid black;
+}
+
+#subNavbar a h3 {
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+
+/***********/
+/* CONTENT */
+/***********/
+
+.container {
+    width: 78%;
+    margin: auto;
+}
+
+
+/* Subscribe */
+
+#subscribe {
+    padding-top: 135px;
+}
+
+#subscribe hr {
+    border: none;
+    height: 1px;
+    background-color: #DDD;
+}
+
+#subscribe-items {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#subscribe-items img {
+    width: 4rem;
+}
+
+#subscribe-items h3 {
+    font-weight: 200;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#subscribe-items h3 span {
+    text-decoration: line-through;
+}
+
+#subscribe-items button {
+    padding:15px 15px;
+    margin: 5px 15px 0px 0px;
+    border-radius: 0;
+    border: none;
+    color: white;
+    background-color: black;
+    font-family: Poppins;
+    font-weight:500;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    margin-top: 50px;
+}
+
+#main-content-left {
+    display: block;
+    border-right: 1px solid #ddd;
+}
+
+#main-content-right {
+    display: block;
+    border-left: 1px solid #ddd;
+    
+}
+
+.left-card {
+    margin-bottom: 4rem;
+}
+
+.left-card h3 {
+    width: 90%;
+}
+
+.left-card img {
+    display: block;
+    width: 95%;
+}
+
+.center-card > * {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+#main-content-center h3 {
+    font-size: 2rem;
+}
+
+.center-card hr {
+    display: inline-block;
+    transform: translateX(20px);
+}
+
+.right-card {
+    padding-bottom: 4rem;
+}
+
+#right-card-top {
+    margin-bottom: 120px;
+}
+
+.right-card > * {
+    display: block;
+    width: 95%;
+    float: right;
+}
+
+.right-card hr {
+    float: none;
+    transform: translateX(20px);
+}
+
+.right-card h3 {
+    padding-bottom: 1rem;
+}
+
+.side-card h3 {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.side-card h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.side-card hr {
+    border: none;
+    height: 1px;
+    width: 5rem;
+    background-color: #DDD;  /* Modern Browsers */
+    margin: 1rem 0 1rem 0;
+}
+
+.side-card p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/***********/
+/* TRENDING */
+/***********/
+
+#trending-background {
+    margin-top: 8rem;
+    background-color: #F5F5F5;
+}
+
+#trending {
+    text-align: center;
+}
+
+#trending h4 {
+    padding: 1rem 0 1rem 0;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#trending hr {
+    border: none;
+    height: 1px;
+    background-color: #DDD;
+}
+
+#trending-cards {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+}
+
+.trending-img {
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+}
+
+.trending-card {
+    display: flex;
+}
+
+.trending-category {
+    text-align: left;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+
+.trending-header {
+    text-align: left;
+    font-weight: 200;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.trending-header:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.trending-author {
+    text-align: left;
+    font-weight: 300;
+    padding-left: 2rem;
+    padding-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+/*****************/
+/* VIDEO SECTION */
+/*****************/
+
+#video-section {
+    background-color: black;
+    margin-top: 14rem;
+    margin-bottom: 8rem;
+}
+
+#legend-video {
+    outline: none;
+    display: block;
+    margin: auto;
+}
+
+
+/*****************/
+/* AD IT YOURSELF */
+/*****************/
+
+#ad-it-yourself {
+    padding-bottom: 4rem;
+}
+
+#ad-it-yourself h2 {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+#ad-it-yourself hr {
+    border: none;
+    height: 1px;
+    background-color: #DDD;
+}
+
+#ad-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.ad-card {
+    margin: 0 1rem 0 1rem;
+}
+
+.ad-card img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.ad-card h3 {
+    padding: 1rem 0 1rem 0;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    font-weight: 200;
+    height: 8rem;
+}
+
+.ad-card h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ad-card hr {
+    border: none;
+    height: 1px;
+    width: 5rem;
+    background-color: #DDD;  /* Modern Browsers */
+    margin: 1rem 0 1rem 0;
+}
+
+.ad-card h5 {
+    font-weight: 300;
+    bottom: 1rem;
+    height: 3rem;
+}
+
+/*****************/
+/* LARGE CARD    */
+/*****************/
+
+#large-card {
+    margin-bottom: 6rem;
+}
+
+#large-card h2 {
+    font-weight: 200;
+    font-size: 2.1rem;
+}
+
+#large-card h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#large-card hr {
+    border: none;
+    height: 1px;
+    width: 5rem;
+    background-color: #DDD;  /* Modern Browsers */
+    margin: 1rem 0 1rem 0;
+}
+
+#large-card h4 {
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+/*****************/
+/* NEWS & VIEWS  */
+/*****************/
+
+#news-and-views {
+    padding-bottom: 12rem;
+}
+
+#news-and-views h2 {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+#news-and-views hr {
+    border: none;
+    height: 1px;
+    background-color: #DDD;
+}
+
+/*****************/
+/* STORY SECTION */
+/*****************/
+
+.story-card {
+    display: flex;
+    padding-bottom: 4rem;
+    width: 74%;
+}
+
+.story-card img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    padding-right: 2rem;
+}
+
+.story-card h4 {
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+    margin-top: 0.8rem;
+}
+
+.story-card h2 {
+    font-weight: 200;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.story-card h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.story-card p {
+    font-size: 0.8rem;
+
+}
+
+/*****************/
+/* FOOTER        */
+/*****************/
+
+footer {
+    background-color: #333;
+    height: 500px;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#footer-left {
+    width: 50%;
+}
+
+#footer-left img {
+    width: 50px;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+#footer-left p {
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    width: 78%;
+    margin-top: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-icons {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.footer-icon {
+    cursor: pointer;
+}
+
+#footer-right {
+    width: 50%;
+    display: flex;
+}
+
+.footer-column {
+    margin-right: 12rem;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+}
+
+.footer-column h6 {
+    font-weight: 300;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.footer-column h6:hover {
+    text-decoration: underline;
+}
+
+
+/******************/
+/* HAMBURGER MENU */
+/******************/
+
+#menu-overlay {
+    display: none;
+}
+
+#menu-overlay.display {
+    display:block;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 5;
+}
+
+#overlay-content {
+    padding-top: 95px;
+    width: 84%;
+    margin: auto;
+}
+
+#overlay-content h1 {
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+#overlay-content h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+#overlay-content h4 {
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+#overlay-content h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+#overlay-content hr {
+    border: none;
+    height: 1px;
+    background-color: #AAA;
+}
+
+#overlay-content-extra {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
